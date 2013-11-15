@@ -33,7 +33,7 @@ to the webfolder containing landtool.php.  For instance, if landtool.php is acce
 
 economy = http://example.com/
 
-Since the viewer is contact this URL directly, it must be accessible to anybody who logs in to your grid.
+Since the viewer is contacting this URL directly, it must be accessible to anybody who logs in to your grid.
 
 4) Restart the ROBUST instance hosting the login service.  Users that have previously logged in to your grid with a viewer that records grid URLs
 may need to refresh this information.
