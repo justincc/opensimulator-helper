@@ -30,6 +30,7 @@ You will also need PHP to be active with the xmlrpc extension (in Ubuntu this is
 to the webfolder containing landtool.php.  For instance, if landtool.php is accessible via the URL http://example.com/landtool.php, then you will need to configure
 
 [GridInfo]
+
 economy = http://example.com/
 
 Since the viewer is contact this URL directly, it must be accessible to anybody who logs in to your grid.
