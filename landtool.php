@@ -1,4 +1,5 @@
 <?php
+
 # Copyright (c)Melanie Thielker and Teravus Ovares (http://opensimulator.org/)
 #
 #  Redistribution and use in source and binary forms, with or without
@@ -25,35 +26,20 @@
 #
 
 # updated for Robust installations: BlueWall 2011
+# further minor changes by justincc (http://justincc.org)
 
-
-  #
   # Settings
-  #
   $dbhost = "127.0.0.1";
   $dbname = "opensimmaster";
   $dbuser = "root";
   $dbpass = "passw0rd";
-  # 
-  # Set this to your economy source / sink accounts
-  $economy_source_account = "3d6181b0-6a4b-97ef-18d8-722652995cf1";
-  $economy_sink_account="3d6181b0-6a4b-97ef-18d8-722652995cf1";
 
   # Tables
   $presence = "Presence";
 
+  # XMLRPC
   $xmlrpc_server = xmlrpc_server_create();
-
-  function process_transaction($avatarId, $amount, $ipAddress)
-  {
-    # Do Credit Card Processing here!  Return False if it fails!
-    # Remember, $amount is stored without decimal places, however it's assumed
-    # that the transaction amount is in Cents and has two decimal places
-    # 5 dollars will be 500
-    # 15 dollars will be 1500
-
-    return True;
-  }
+  xmlrpc_server_register_method($xmlrpc_server, "preflightBuyLandPrep", "buy_land_prep");
 
   function validate_user($agent_id, $s_session_id)
   {
@@ -76,10 +62,6 @@
 
     return $row['UserID'];
   }
-
-
-  xmlrpc_server_register_method($xmlrpc_server, "preflightBuyLandPrep",
-    "buy_land_prep");
 
   function buy_land_prep($method_name, $params, $app_data)
   {
