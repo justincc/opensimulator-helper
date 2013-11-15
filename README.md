@@ -3,7 +3,8 @@ opensimulator-helper
 
 Very small repository for containing PHP helper code necessary for some transactions involving an economy (e.g. selling land even for $0)
 
-Code originally comes from Melanie Theilker and Teravus Ovares with some cleanup by BlueWall.
+Code originally comes from Melanie Theilker and Teravus Ovares with some cleanup by BlueWall.  Originating version was the opensim-wi
+project (http://forge.opensimulator.org/gf/project/opensimwi/)
 
 I will maintain this code but have no current plans to extend it (i.e. I won't develop it into a proper economy module unless someone heavily incentivises it :)
 
