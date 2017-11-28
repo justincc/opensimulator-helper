@@ -6,9 +6,7 @@ Very small repository for containing PHP helper code necessary for some transact
 Code originally comes from Melanie Theilker and Teravus Ovares with some cleanup by BlueWall.  Originating version was the opensim-wi
 project (http://forge.opensimulator.org/gf/project/opensimwi/)
 
-I will maintain this code but have no current plans to extend it (i.e. I won't develop it into a proper economy module unless someone heavily incentivises it :)
-
-However, patches are welcome.
+I will maintain this code but have no plans to extend it as I no longer work with virtual worlds.  However, I will address basic security issues.
 
 Background
 ==========
