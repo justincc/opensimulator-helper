@@ -6,7 +6,8 @@ Very small repository for containing PHP helper code necessary for some transact
 Code originally comes from Melanie Theilker and Teravus Ovares with some cleanup by BlueWall.  Originating version was the opensim-wi
 project (http://forge.opensimulator.org/gf/project/opensimwi/)
 
-I will maintain this code but have no plans to extend it as I no longer work with virtual worlds.  However, I will address basic security issues.
+Unfortunately, this code uses the [original mysql module](http://php.net/manual/en/book.mysql.php) and I have no plans to update it since I no longer
+work with OpenSimulator or virtual worlds.  However, I will continue to address basic security issues until PHP 5 goes out of service.
 
 Background
 ==========
